@@ -21,6 +21,10 @@ nav a {
     margin: 0 10px;
     text-decoration: none;
 }
+nav i{
+    margin-right: 5px;
+    color: #fff;
+}
 main {
     display: flex;
     margin: 20px;
@@ -74,7 +78,6 @@ aside form button {
 .checkbox-group {
     display: flex;
     flex-direction: column;  
-    border: 2px solid #ccc;
 }
 .checkbox-group input[type="checkbox"] {
     margin-right: 10px;
@@ -94,4 +97,43 @@ aside form button {
     gap: 10px;
     flex-direction: row;
     width: 50%;
+}
+@media (max-width: 999px) {
+    main {
+        flex-direction: column;
+        margin: 0;
+    }
+    section {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    aside {
+        margin-top: 20px;
+    }
+    header, footer {
+        text-align: center;
+    }
+    
+}
+@media (max-width: 480px) {
+    header, footer {
+        padding: 10px;
+    }
+    nav {
+        padding: 5px;
+    }
+    nav a {
+        margin: 0 5px;
+    }
+    main {
+        margin: 0;
+    }
+    section, aside {
+        padding: 10px;
+    }
+    section {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
 }
