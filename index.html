@@ -4,66 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        nav {
-            background: #444;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        main {
-            display: flex;
-            margin: 20px;
-        }
-        section {
-            flex: 3;
-            padding: 20px;
-            background: #f4f4f4;
-            margin-right: 20px;
-        }
-        aside {
-            flex: 1;
-            padding: 20px;
-            background: #ddd;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 20px;
-            margin-top: 20px;
-        }
-        ul, ol {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-        form {
-            margin-top: 20px;
-        }
-        form input, form textarea, form button {
-            display: block;
-            width: 100%;
-            margin-bottom: 10px;
-            padding: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -103,12 +44,15 @@
             <p>This is the sidebar content.</p>
             <form style="background: #fff; padding: 15px; border: 1px solid #ccc; border-radius: 5px;">
                 <h3>Additional Form</h3>
-                <label style="display: block; margin-bottom: 10px;">
-                    <input type="checkbox" name="option1"> Option 1
-                </label><br>
-                <label>
-                    <input type="checkbox" name="option2"> Option 2
-                </label><br>
+                <div class="checkbox-group">
+                    <label>
+                        
+                        <input type="checkbox" name="option1" value="option1">option 1  
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="option2">option 2                      
+                    </label><br>
+                </div>
                 <label>
                     <input type="radio" name="choice" value="choice1"> Choice 1
                 </label><br>
